@@ -1,0 +1,155 @@
+.flow-graph .flow-graph-wrapper {
+  margin: 1.5rem 0;
+}
+
+.flow-graph .flow-graph-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.flow-graph .flow-graph-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgb(98 126 234 / 30%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.flow-graph .flow-graph-play:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.flow-graph .flow-graph-play:hover:not(:disabled) {
+  box-shadow: 0 0 30px rgb(98 126 234 / 50%);
+  transform: translateY(-1px);
+}
+
+.flow-graph .flow-graph-stage {
+  position: relative;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flow-graph .flow-graph-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-image:
+    linear-gradient(rgb(98 126 234 / 3%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(98 126 234 / 3%) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.flow-graph .flow-graph-edge {
+  transition: stroke-width 0.2s ease;
+}
+
+.flow-graph .flow-graph-edge-label {
+  fill: var(--text-faint);
+  font-size: 11px;
+  font-family: var(--mono-font-family);
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.flow-graph .flow-graph-node {
+  cursor: pointer;
+  outline: none;
+}
+
+.flow-graph .flow-graph-node-glow {
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+
+.flow-graph .flow-graph-node:hover .flow-graph-node-glow,
+.flow-graph .flow-graph-node:focus-visible .flow-graph-node-glow {
+  opacity: 0.5;
+}
+
+.flow-graph .flow-graph-node-circle {
+  transition: filter 0.2s ease;
+}
+
+.flow-graph .flow-graph-node-icon {
+  pointer-events: none;
+}
+
+.flow-graph .flow-graph-node-label {
+  fill: var(--text-muted);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+}
+
+.flow-graph .flow-graph-packet {
+  pointer-events: none;
+  filter: drop-shadow(0 0 4px currentcolor);
+}
+
+.flow-graph .flow-graph-info {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 240px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 40%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flow-graph .flow-graph-info[hidden] {
+  display: none;
+}
+
+.flow-graph .flow-graph-info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.flow-graph .flow-graph-info-icon {
+  font-size: 22px;
+}
+
+.flow-graph .flow-graph-info-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--brand-2);
+}
+
+.flow-graph .flow-graph-info-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (width <= 768px) {
+  .flow-graph .flow-graph-info {
+    position: static;
+    width: auto;
+    margin-top: 12px;
+  }
+}

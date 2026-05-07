@@ -1,0 +1,20 @@
+.model-card {
+  background: linear-gradient(135deg, rgb(98 126 234 / 10%), rgb(140 141 252 / 5%));
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.model-card h3 {
+  color: var(--brand-2);
+  margin-top: 0;
+}
+
+.model-card strong {
+  color: var(--brand-2);
+}
+
+.model-card > :last-child {
+  margin-bottom: 0;
+}

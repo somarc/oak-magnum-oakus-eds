@@ -1,0 +1,23 @@
+.layer-section {
+  background: rgb(98 126 234 / 6%);
+  border-left: 3px solid var(--brand-1);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+.layer-section h2 {
+  color: var(--brand-2);
+  margin-top: 0;
+  border-bottom: 1px solid rgb(98 126 234 / 20%);
+  padding-bottom: 0.5rem;
+}
+
+.layer-section h3 {
+  color: var(--brand-2);
+  margin-top: 1rem;
+}
+
+.layer-section > :last-child {
+  margin-bottom: 0;
+}

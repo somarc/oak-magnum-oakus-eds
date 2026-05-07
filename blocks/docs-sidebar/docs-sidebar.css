@@ -1,0 +1,91 @@
+/*
+ * Docs sidebar — fixed left rail. Visible >= 1024px.
+ * Page padding for the rail is applied in styles.css via :has().
+ */
+
+.docs-sidebar {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .docs-sidebar {
+    display: block;
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    overflow-y: auto;
+    padding: 1.5rem 1.25rem 4rem;
+    background: var(--surface-color);
+    border-right: 1px solid var(--divider-color);
+    z-index: 1;
+  }
+}
+
+.docs-sidebar .docs-sidebar-heading {
+  display: block;
+  font-size: var(--body-font-size-s);
+  font-weight: 700;
+  color: var(--brand-2);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--divider-color);
+  text-decoration: none;
+}
+
+.docs-sidebar .docs-sidebar-heading:hover {
+  color: var(--brand-3);
+  text-decoration: none;
+}
+
+.docs-sidebar .docs-sidebar-group {
+  margin-bottom: 1.25rem;
+}
+
+.docs-sidebar .docs-sidebar-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.docs-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-sidebar li {
+  margin: 0;
+}
+
+.docs-sidebar li a {
+  display: block;
+  padding: 0.35rem 0.75rem;
+  border-left: 2px solid transparent;
+  margin-left: -0.75rem;
+  color: var(--text-muted);
+  font-size: var(--body-font-size-s);
+  text-decoration: none;
+  border-radius: 0 6px 6px 0;
+  line-height: 1.4;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.docs-sidebar li a:hover {
+  color: var(--brand-2);
+  background: var(--brand-soft);
+  text-decoration: none;
+}
+
+.docs-sidebar li.current a {
+  color: var(--brand-2);
+  font-weight: 600;
+  background: var(--brand-soft);
+  border-left-color: var(--brand-1);
+}

@@ -1,0 +1,32 @@
+.action-btn {
+  text-align: center;
+  margin: 3rem 0 1rem;
+}
+
+.action-btn .action-btn-link {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #4a5fd9, var(--brand-1));
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+}
+
+.action-btn .action-btn-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgb(98 126 234 / 40%);
+  background: linear-gradient(135deg, #3a4fc9, #5a6eda);
+  text-decoration: none;
+  color: #fff;
+}
+
+.action-btn.secondary .action-btn-link {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+}
+
+.action-btn.secondary .action-btn-link:hover {
+  background: linear-gradient(135deg, #3bca6d, #14b552);
+}

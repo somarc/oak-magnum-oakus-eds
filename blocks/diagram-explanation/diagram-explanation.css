@@ -1,0 +1,16 @@
+.diagram-explanation {
+  background: rgb(98 126 234 / 5%);
+  border: 1px solid rgb(98 126 234 / 15%);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.diagram-explanation h3 {
+  color: var(--brand-2);
+  margin-top: 0;
+}
+
+.diagram-explanation > :last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,25 @@
+.figure figure {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+}
+
+.figure figure picture,
+.figure figure img {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 40%);
+}
+
+.figure figcaption {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--text-faint);
+  font-size: var(--body-font-size-s);
+}

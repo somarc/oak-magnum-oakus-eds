@@ -1,0 +1,41 @@
+.picture {
+  margin: 1.5rem 0;
+}
+
+.picture figure {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.picture figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 30%);
+}
+
+.picture figure a {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.picture figure a:hover {
+  transform: translateY(-2px);
+}
+
+.picture figure a:hover img {
+  box-shadow: 0 12px 32px rgb(0 0 0 / 45%);
+}
+
+.picture figcaption {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--text-faint);
+  font-size: var(--body-font-size-s);
+}
