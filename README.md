@@ -1,9 +1,10 @@
-# Your Project's Title...
-Your project's description...
+# The Magnum OAKus
+
+Production-grade Apache Oak SegmentStore (TarMK) recovery procedures, ported to Adobe Edge Delivery Services with DA-backed content.
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--oak-magnum-oakus-eds--somarc.aem.page/
+- Live: https://main--oak-magnum-oakus-eds--somarc.aem.live/
 
 ## Documentation
 
