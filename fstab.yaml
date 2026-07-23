@@ -1,3 +1,0 @@
-mountpoints:
-  # DA-backed content workspace for The Magnum OAKus.
-  /: https://content.da.live/somarc/oak-magnum-oakus-eds/
